@@ -1,10 +1,10 @@
 # tmdb_api
 Упражнение на чтение кода. Фильмы с TMDB
 
-## An API for searching a personal movie DB for personal recommendations
-The program takes a sample movie and scans local stored film database
-(referred to as 'MDB' from now on, as opposed to the internet TMDB) for
-best matches. MDB itself is a little fragment of internet-based [TMDB](https://www.themoviedb.org/)
+## An API for searching for personal recommendations in a personal movie DB 
+Input a film name and find best matches in the local stored film database
+(referred to as 'MDB' from now on, as opposed to the internet TMDB).
+MDB itself is a little fragment of the internet-based [TMDB](https://www.themoviedb.org/)
 
 
 **_How to use_**:
@@ -12,25 +12,25 @@ run
 ```
 python3 [script_name]
 ```
-Enter the path to the MDB, user API or film's title to serve as a sample when
+Enter the path to the MDB, user API key or film's title to serve as a sample when
 asked by a corresponding message.
 
 
 ### find_similar.py
 The script asks for MDB path and a filmname (sample) to match results against.
 Upon a successful search, the script goes through the MDB calculating each 
-film's rating score and returns desired number of films (9 by default) having
-highest rating. The score is calculated by comparing each MDB film's
+film's score and returns desired number of films (9 by default) having
+highest score. This score is determined by comparing each MDB film's
 parameters against sample ones and adding some value if they do match.
 
 
 ### hello_api_TMDB.py
-As a test scripts asks for user API and prints out "Saw II" film budget,
+As a test scripts asks for user API key and prints out "Saw II" film budget,
 which is 4000000
 
 
 ### make_own_db.py
-Asks for user API and makes a copy of the first 1000 films data (or less
+Asks for user API key and makes a copy of the first 1000 films data (or less
 if not all requests are successful) from [TMDB](https://www.themoviedb.org/) and saves
 it as a JSON file.
 
